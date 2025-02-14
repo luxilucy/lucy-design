@@ -27,7 +27,7 @@
         /* Scrollable iframe container */
         .iframe-container {
             width: 100%;
-            height: 600px; /* Reduce height to ensure text is visible */
+            height: 600px; /* Ensure visibility */
             overflow: auto;
             -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
             display: flex;
@@ -54,5 +54,15 @@
         <p>Feel free to reach out for any opportunities!</p>
 
         <!-- Move CV fallback link above the iframe -->
-        <update>
+        <p>If the CV does not load, <a href="https://yourusername.github.io/lucy-portfolio/Lucy_CV.pdf" target="_blank">click here</a> to view it directly.</p>
+
+        <!-- Scrollable CV container -->
+        <div class="iframe-container">
+            <iframe src="https://docs.google.com/gview?url=https://yourusername.github.io/lucy-portfolio/Lucy_CV.pdf&embedded=true"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
+<update>
       
