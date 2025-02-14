@@ -9,7 +9,8 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 0;
-            background-color: #d4f8c6; /* Light Green Background */
+            padding: 20px;
+            background-color: #f4f4f4;
         }
         .container {
             max-width: 900px;
@@ -21,11 +22,12 @@
         }
         p {
             color: #555;
+            margin-bottom: 15px;
         }
         /* Scrollable iframe container */
         .iframe-container {
             width: 100%;
-            height: 85vh; /* Make sure it takes up enough height */
+            height: 600px; /* Reduce height to ensure text is visible */
             overflow: auto;
             -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
             display: flex;
@@ -35,12 +37,11 @@
             width: 100%;
             height: 100%;
             border: none;
-            overflow: auto; /* Ensure scrolling is enabled inside */
         }
         /* Mobile-specific adjustments */
         @media (max-width: 768px) {
             .iframe-container {
-                height: 90vh; /* Give more space on smaller screens */
+                height: 400px; /* Reduce iframe height on mobile */
             }
         }
     </style>
@@ -53,16 +54,4 @@
         <p>Feel free to reach out for any opportunities!</p>
 
         <!-- Move CV fallback link above the iframe -->
-        <p>If the CV does not load, <a href="Lucy_CV.pdf" target="_blank">click here</a> to view it directly.</p>
-
-        <!-- Scrollable CV container -->
-        <div class="iframe-container">
-            <iframe src="Lucy_CV.pdf"></iframe>
-        </div>
-
-    </div>
-
-</body>
-</html>
-<!-- Force GitHub Pages update -->
-<update>
+      
