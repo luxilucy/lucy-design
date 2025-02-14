@@ -1,1 +1,1 @@
-# luxilucy-portfolio
+# lucy-portfolio
