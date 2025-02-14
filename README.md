@@ -1,1 +1,1 @@
-# lucy-portfolio
+# lucy-design
