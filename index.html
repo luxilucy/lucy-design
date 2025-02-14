@@ -12,8 +12,9 @@
             background-color: #f4f4f4;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
+            padding: 10px;
         }
         h1 {
             color: #333;
@@ -21,11 +22,24 @@
         p {
             color: #555;
         }
+        /* Responsive iframe */
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 80vh; /* Use a percentage of viewport height for better fit */
+            overflow: hidden;
+        }
         iframe {
             width: 100%;
-            height: 800px;
+            height: 100%;
             border: none;
-            margin-top: 20px;
+            overflow: auto; /* Enable scrolling inside the iframe */
+        }
+        /* Mobile-specific adjustments */
+        @media (max-width: 768px) {
+            .iframe-container {
+                height: 85vh; /* Increase height for better mobile visibility */
+            }
         }
     </style>
 </head>
@@ -36,16 +50,13 @@
         <p>Hi, I'm Lucy! This is my personal webpage where you can view my CV.</p>
         <p>Feel free to reach out for any opportunities!</p>
 
-        <!-- Embedded CV -->
-        <iframe src="Lucy_CV.pdf"></iframe>
+        <!-- Responsive and Scrollable CV -->
+        <div class="iframe-container">
+            <iframe src="Lucy_CV.pdf"></iframe>
+        </div>
         
         <p>If the CV does not load, <a href="Lucy_CV.pdf" target="_blank">click here</a> to view it directly.</p>
     </div>
 
 </body>
 </html>
-<!-- Force GitHub Pages update -->
-<!-- Force GitHub Pages update -->
-<!-- Force GitHub Pages update -->
-
-
