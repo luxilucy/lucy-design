@@ -8,58 +8,38 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 0;
-            padding: 20px;
+            margin: 20px;
             background-color: #f4f4f4;
         }
         .container {
-            max-width: 900px;
+            max-width: 800px;
             margin: auto;
-            padding: 10px;
         }
         h1 {
             color: #333;
         }
         p {
             color: #555;
-            margin-bottom: 15px;
-        }
-        /* Scrollable iframe container */
-        .iframe-container {
-            width: 100%;
-            height: 600px; /* Ensure visibility */
-            overflow: auto;
-            -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
-            display: flex;
-            justify-content: center;
         }
         iframe {
             width: 100%;
-            height: 100%;
+            height: 800px;
             border: none;
-        }
-        /* Mobile-specific adjustments */
-        @media (max-width: 768px) {
-            .iframe-container {
-                height: 400px; /* Reduce iframe height on mobile */
-            }
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Welcome to My Page</h1>
-        <p>Hi, I'm Lucy! This is my personal webpage where you can view my CV.</p>
-        <p>Feel free to reach out for any opportunities!</p>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Luxi Lucy! This is my personal webpage where you can view my CV.</p>
+        <p>Feel free to explore my work and reach out for any opportunities!</p>
 
-        <!-- Move CV fallback link above the iframe -->
-        <p>If the CV does not load, <a href="https://yourusername.github.io/lucy-portfolio/Lucy_CV.pdf" target="_blank">click here</a> to view it directly.</p>
-
-        <!-- Scrollable CV container -->
-        <div class="iframe-container">
-            <iframe src="https://docs.google.com/gview?url=https://yourusername.github.io/lucy-portfolio/Lucy_CV.pdf&embedded=true"></iframe>
-        </div>
+        <!-- Embedded CV -->
+        <iframe src="XiLu_CV2025_github.pdf"></iframe>
+        
+        <p>If the CV does not load, <a href="XiLu_CV2025_github.pdf" target="_blank">click here</a> to view it directly.</p>
     </div>
 
 </body>
